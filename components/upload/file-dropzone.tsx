@@ -5,7 +5,7 @@ import type React from "react"
 import type { RefObject } from "react"
 
 interface FileDropzoneProps {
-  fileInputRef: RefObject<HTMLInputElement | null>
+  fileInputRef: RefObject<HTMLInputElement>
   handleBoxClick: () => void
   handleDragOver: (e: React.DragEvent) => void
   handleDrop: (e: React.DragEvent) => void

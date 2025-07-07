@@ -5,7 +5,6 @@ import type React from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { X } from "lucide-react"
 import { useRef, useState } from "react"
 import { FileDropzone } from "./file-dropzone"
 import { FileList } from "./file-list"
@@ -137,9 +136,7 @@ export function ImageUploadModal({ isOpen, onClose, onInsertImage }: ImageUpload
                   <DialogTitle className="text-lg font-medium">Upload Images</DialogTitle>
                   <p className="text-sm text-muted-foreground mt-1">Add images to your note with drag and drop</p>
                 </div>
-                <Button variant="ghost" size="sm" onClick={handleClose} className="h-8 w-8 p-0">
-                  <X className="h-4 w-4" />
-                </Button>
+          
               </div>
             </DialogHeader>
 
