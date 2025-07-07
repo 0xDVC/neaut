@@ -19,4 +19,6 @@ jobs:
         uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: Deploy
-        run: flyctl deploy -c server/fly.toml
+        run: |
+            cd server 
+            flyctl deploy
